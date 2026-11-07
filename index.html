@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Diwali Tanu ❤️</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:cursive;
+  color:white;
+  background:#16001f;
+  overflow:hidden;
+  text-align:center;
+}
+
+.slide{
+  display:none;
+  height:100vh;
+  width:100%;
+  padding:25px 18px;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position:relative;
+  overflow:hidden;
+}
+
+.slide.active{display:flex}
+
+h1{
+  color:#ffdf70;
+  font-size:34px;
+  text-shadow:0 0 20px orange;
+  margin:15px;
+}
+
+p{
+  font-size:18px;
+  line-height:1.8;
+  max-width:550px;
+}
+
+button{
+  background:linear-gradient(45deg,#ffb700,#ffdf70);
+  color:#51002f;
+  border:0;
+  border-radius:30px;
+  padding:13px 28px;
+  font-size:17px;
+  font-weight:bold;
+  margin-top:25px;
+  cursor:pointer;
+  box-shadow:0 0 15px gold;
+  z-index:5;
+}
+
+.number{
+  position:absolute;
+  bottom:15px;
+  color:#ffdf70;
+  font-size:14px;
+}
+
+/* SLIDE 1 */
+.s1{
+  background:radial-gradient(circle,#66104c,#170020 75%);
+}
+
+.fireworks{
+  position:absolute;
+  font-size:42px;
+  animation:fire 2s infinite alternate;
+}
+
+.f1{top:10%;left:10%}
+.f2{top:18%;right:10%;animation-delay:.5s}
+.f3{top:42%;left:5%;animation-delay:1s}
+.f4{top:40%;right:5%;animation-delay:.8s}
+
+@keyframes fire{
+  from{transform:scale(.7);opacity:.5}
+  to{transform:scale(1.4);opacity:1}
+}
+
+/* SLIDE 2 */
+.s2{
+  background:linear-gradient(160deg,#17002d,#6a003f,#e95b00);
+}
+
+.lights{
+  font-size:35px;
+  letter-spacing:8px;
+  animation:shine 1s infinite alternate;
+}
+
+@keyframes shine{
+  from{text-shadow:0 0 5px yellow;opacity:.6}
+  to{text-shadow:0 0 25px gold;opacity:1}
+}
+
+.diyas{font-size:55px;margin:25px}
+
+/* SLIDE 3 HOUSE */
+.s3{
+  background:linear-gradient(#160b3e,#8b2654,#ff9b38);
+}
+
+.house{
+  width:290px;
+  height:190px;
+  position:relative;
+  background:#ffcf82;
+  margin-top:80px;
+  border:5px solid #8b3d21;
+  border-radius:8px;
+  box-shadow:0 0 30px gold;
+}
+
+.roof{
+  position:absolute;
+  width:0;height:0;
+  border-left:165px solid transparent;
+  border-right:165px solid transparent;
+  border-bottom:100px solid #a62c25;
+  top:-100px;left:-20px;
+}
+
+.door{
+  position:absolute;
+  bottom:0;left:115px;
+  width:60px;height:100px;
+  background:#743018;
+  border:4px solid gold;
+  border-radius:30px 30px 0 0;
+}
+
+.window{
+  position:absolute;
+  width:48px;height:55px;
+  background:#ffe77b;
+  top:35px;
+  border:4px solid #913e20;
+  box-shadow:0 0 20px gold;
+}
+
+.w1{left:15px}
+.w2{right:15px}
+
+.home-lights{
+  position:absolute;
+  top:-10px;
+  left:0;
+  width:100%;
+  font-size:23px;
+  letter-spacing:3px;
+}
+
+.rangoli{
+  font-size:45px;
+  margin-top:10px;
+}
+
+.house-text{
+  margin-top:35px;
+  font-size:17px;
+  color:#ffe8a8;
+}
+
+/* SLIDE 4 */
+.s4{
+  background:linear-gradient(140deg,#29002d,#9a174b,#ff7b25);
+}
+
+.message{
+  background:rgba(255,255,255,.12);
+  border:2px solid gold;
+  padding:22px;
+  border-radius:22px;
+  max-width:550px;
+  box-shadow:0 0 25px #ffba00;
+}
+
+.heart{
+  font-size:45px;
+  animation:heartbeat 1s infinite;
+}
+
+@keyframes heartbeat{
+  50%{transform:scale(1.2)}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SLIDE 1 -->
+<section class="slide s1 active">
+
+<div class="fireworks f1">🎆</div>
+<div class="fireworks f2">✨</div>
+<div class="fireworks f3">🎇</div>
+<div class="fireworks f4">💥</div>
+
+<div style="font-size:65px">🪔</div>
+
+<h1>Happy Diwali Tanu ❤️</h1>
+
+<p>
+May your life sparkle like fireworks
+and shine brighter than a million stars!
+</p>
+
+<div style="font-size:40px;margin-top:25px">
+🎆 🎇 🎆
+</div>
+
+<button onclick="nextSlide(1)">Let's Celebrate ❤️ ➜</button>
+<div class="number">Slide 1 / 4</div>
+
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide s2">
+
+<div class="lights">
+✨ 🟡 ✨ 🟠 ✨ 🟡 ✨
+</div>
+
+<h1>A Festival Full Of Lights ✨</h1>
+
+<div class="diyas">🪔 🪔 🪔</div>
+
+<p>
+May every diya bring happiness,
+every light bring hope,
+and every prayer bring blessings
+into your beautiful life.
+</p>
+
+<div class="diyas">🌸 🪷 🌸</div>
+
+<button onclick="nextSlide(1)">Next Surprise ➜</button>
+<div class="number">Slide 2 / 4</div>
+
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide s3">
+
+<div style="font-size:35px">✨🏮✨🏮✨</div>
+
+<h1>Our Beautiful Diwali Home 🏡</h1>
+
+<div class="house">
+  <div class="roof"></div>
+  <div class="home-lights">🟡🟠🟡🟠🟡</div>
+  <div class="window w1"></div>
+  <div class="window w2"></div>
+  <div class="door"></div>
+</div>
+
+<div class="rangoli">🌺 🌸 🪔 🌸 🌺</div>
+
+<p class="house-text">
+A home full of lights, love,
+happiness and beautiful memories. ❤️
+</p>
+
+<button onclick="nextSlide(1)">One Last Surprise 🎁</button>
+<div class="number">Slide 3 / 4</div>
+
+</section>
+
+<!-- SLIDE 4 -->
+<section class="slide s4">
+
+<div class="heart">❤️🫂❤️</div>
+
+<h1>For You Tanu 🥹</h1>
+
+<div class="message">
+
+<p>
+Dear Tanu,
+
+Wishing you a very Happy Diwali! 🪔
+
+You are a special part of my life.
+May God fill your life with endless
+happiness, success, good health
+and countless beautiful moments.
+
+May your smile never fade,
+your dreams come true
+and your heart always stay happy.
+
+Thank you for being such a wonderful
+sister. No matter what happens,
+you will always be special to me.
+
+Keep smiling and keep shining!
+
+</p>
+
+<h2 style="color:#ffe47a;margin-top:18px">
+Love You Tanu! 😘💋
+</h2>
+
+</div>
+
+<div style="font-size:35px;margin-top:20px">
+🪔🎆❤️🎆🪔
+</div>
+
+<button onclick="nextSlide(-3)">Replay ❤️</button>
+<div class="number">Slide 4 / 4</div>
+
+</section>
+
+<script>
+let current = 0;
+const slides = document.querySelectorAll(".slide");
+
+function nextSlide(step){
+  slides[current].classList.remove("active");
+  current = (current + step + slides.length) % slides.length;
+  slides[current].classList.add("active");
+}
+</script>
+
+</body>
+</html>
